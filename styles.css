@@ -1,0 +1,548 @@
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #eaf2f8;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+/* Full-screen video background */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+/* Landing section */
+#landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #63a2ff;
+    background: transparent;
+    text-align: center;
+    transition: opacity 0.6s ease;
+}
+
+.main-title {
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    height: 8%;
+}
+#logolpu{
+    height: 60px;
+
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a {
+    color: #eaf2f8;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Section styles */
+section {
+    padding: 80px 20px;
+    margin-top: 60px;
+    color: #eaf2f8;
+}
+
+/* News and Articles sections */
+#news, #articles {
+    background: rgba(50, 50, 50, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.news-item, .article-item {
+    padding: 15px;
+    border-bottom: 1px solid #ffcc00;
+}
+
+.news-item h3, .article-item h3 {
+    font-size: 20px;
+    color: #5dade2;
+}
+
+.article-item h3 a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.article-item h3 a:hover {
+    color: #eaf2f8;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    color: #eaf2f8;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Smooth scrolling effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Scroll reveal animation */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* India Map Section */
+.india-map-container {
+    background-color: rgba(25, 25, 25, 0.9);
+    color: #eaf2f8;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.india-map-container h3 {
+    font-size: 24px;
+    color: #5dade2;
+    margin-bottom: 10px;
+}
+
+.india-map-container p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.map-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.map-image img {
+    max-width: 80%;
+    border-radius: 8px;
+    border: 2px solid #ffcc00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover effect for the map image */
+.map-image img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+/* Causes Container */
+.causes-container {
+    display: flex;
+    margin-top: 30px;
+}
+
+/* Each Cause Card */
+.cause-card {
+    background: rgba(50, 50, 50, 0.8);
+    color: #eaf2f8;
+    padding: 10px;
+    border-radius: 10px;
+    width: 25%;
+    float: left;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cause-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Image Styling */
+.cause-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #ffcc00;
+}
+
+/* Title and Text */
+.cause-card h3 {
+    font-size: 22px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.cause-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #d5d8dc;
+}
+
+/* Causes section container styles */
+.causes-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Cause card styles */
+.cause-card {
+    background: rgba(50, 50, 50, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 27%;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Cause card image styles */
+.cause-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Title and description */
+.cause-card h3 {
+    font-size: 22px;
+    color: #ffcc00;
+    margin-top: 10px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.cause-card p {
+    font-size: 16px;
+    color: #eaf2f8;
+    margin-top: 10px;
+    line-height: 1.6;
+    transition: opacity 0.3s ease;
+}
+
+/* Read more button styles */
+.read-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #63a2ff;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #ffcc00;
+    transform: translateY(-3px);
+}
+
+/* Hover effects for cause card */
+.cause-card:hover {
+    transform: scale(1.05);
+}
+
+.cause-card:hover .cause-image {
+    transform: scale(1.05);
+}
+
+.cause-card:hover h3 {
+    color: #ffcc00;
+}
+
+.cause-card:hover p {
+    opacity: 0.8;
+}
+/* Social and Economic Impact section container styles */
+.impact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Impact card styles */
+.impact-card {
+    background: rgba(50, 50, 50, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 45%;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Impact card title and description */
+.impact-card h3 {
+    font-size: 22px;
+    color: #ffcc00;
+    margin-top: 10px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.impact-card p {
+    font-size: 16px;
+    color: #eaf2f8;
+    margin-top: 10px;
+    line-height: 1.6;
+    transition: opacity 0.3s ease;
+}
+
+/* Read more button styles */
+.read-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #63a2ff;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #ffcc00;
+    transform: translateY(-3px);
+}
+
+/* Hover effects for impact card */
+.impact-card:hover {
+    transform: scale(1.05);
+}
+
+.impact-card:hover h3 {
+    color: #ffcc00;
+}
+
+.impact-card:hover p {
+    opacity: 0.8;
+}
+/* Solutions and Actions section container */
+.solutions-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Solution card styles */
+.solution-card {
+    background: rgba(50, 50, 50, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 27%;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Solution card title and description */
+.solution-card h3 {
+    font-size: 22px;
+    color: #ffcc00;
+    margin-top: 10px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.solution-card p {
+    font-size: 16px;
+    color: #eaf2f8;
+    margin-top: 10px;
+    line-height: 1.6;
+    transition: opacity 0.3s ease;
+}
+
+/* Read more button styles */
+.read-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #63a2ff;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #ffcc00;
+    transform: translateY(-3px);
+}
+
+/* Hover effects for solution card */
+.solution-card:hover {
+    transform: scale(1.05);
+}
+
+.solution-card:hover h3 {
+    color: #ffcc00;
+}
+
+.solution-card:hover p {
+    opacity: 0.8;
+}
+/* News container styling */
+.news-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* News card styling */
+.news-card {
+    background: rgba(20, 20, 20, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    max-width: 700px;
+    text-align: center;
+    color: #eaf2f8;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* News card title */
+.news-card h3 {
+    font-size: 22px;
+    color: #5dade2;
+    margin-bottom: 10px;
+}
+
+/* News card paragraph */
+.news-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #c7d4e3;
+}
+
+/* News image styling */
+.news-image {
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 250px;
+}
+
+.news-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.news-image img:hover {
+    transform: scale(1.03);
+}
+
+/* Know more button styling */
+.know-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #5dade2;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.know-more-btn:hover {
+    background-color: #ffcc00;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+/* Hover effect for news card */
+.news-card:hover {
+    transform: translateY(-3px);
+}
+#ffiii{
+    margin-left: 380px;
+}
+/* Footer Links */
+.footer-links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.footer-link {
+    color: #eaf2f8;
+    margin: 0 10px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #ffcc00;
+}
+
+/* Social Media Icons */
+.social-media-icons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 25px;
+    margin: 0 8px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+

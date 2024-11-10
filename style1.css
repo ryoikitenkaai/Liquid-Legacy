@@ -1,0 +1,149 @@
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #eaf2f8;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+/* Video background */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 20px;
+}
+
+.logo, .logo1 {
+    width: 20px;
+    height: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #ffcc00;
+    margin: 0;
+}
+
+nav a {
+    color: #eaf2f8;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Section styles */
+section {
+    padding: 80px 20px 40px;
+    margin-top: 60px;
+    color: #eaf2f8;
+}
+
+section h2 {
+    font-size: 28px;
+    color: #5dade2;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 10px;
+}
+
+#map {
+    height: 300px;
+    background: rgba(31, 40, 49, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eaf2f8;
+    margin-top: 20px;
+}
+
+/* Card styles */
+.card {
+    background: rgba(50, 50, 50, 0.85);
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(255, 204, 0, 0.3);
+}
+
+/* Footer styles */
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    color: #eaf2f8;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    section {
+        padding: 60px 10px 20px;
+    }
+
+    #map {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    nav a {
+        margin: 3px 0;
+        font-size: 14px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+}
